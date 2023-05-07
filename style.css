@@ -1,0 +1,40 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	background: #1c2a44;
+}
+
+.container{
+	height: 80px;
+	width: 80px;
+}
+
+.Loader{
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	border: 10px solid #1c2a44;
+	border-radius: 50%;
+	border-top-color: red;
+	border-bottom-color: skyblue;
+	animation: rotate 5s linear infinite;
+}
+.loader-spinner{
+	border-bottom-color: palegoldenrod;
+	border-top-color: lime;
+	animation-duration: 3.5s;
+}
+
+@keyframes rotate{
+	0%{
+		transform: scale(1.0) rotate(360deg);
+	}
+	50%{
+		transform: scale(0.8) rotate(-360deg);
+	}
+	100%{
+		transform: scale(1.0) rotate(360deg);
+	}
+}
